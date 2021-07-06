@@ -15,10 +15,11 @@ int main(){
    cout<<endl;
    sort(a,a+n);
    sort(arr.begin(),arr.begin()+size,compare);  
-   //sorted array 
+   //sorted array using compare
    for(int i=0;i<size;i++)
       cout<<arr[i]<<" ";
    cout<<endl;
+   //sorted array without compare
    for(int i=0;i<n;i++)
       cout<<a[i]<<" "; 
 
