@@ -1,6 +1,9 @@
 #include<bits/stdc++.h>
-
 using namespace std;
+
+bool compare(int a,int b){
+    return a>b;
+}
 int main(){
    vector<int> arr{1,7,6,9,22,5};
    int a[]= {5,3,10,7,2,5};
@@ -10,8 +13,8 @@ int main(){
    for(int i=0;i<size;i++)
       cout<<arr[i]<<" ";
    cout<<endl;
-   sort(a,a+n);
-   sort(arr.begin(),arr.begin()+size);  
+   sort(a,a+n,compare);
+   sort(arr.begin(),arr.begin()+size,compare);  
    //sorted array 
    for(int i=0;i<size;i++)
       cout<<arr[i]<<" ";
