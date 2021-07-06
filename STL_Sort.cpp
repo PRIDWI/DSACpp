@@ -13,7 +13,7 @@ int main(){
    for(int i=0;i<size;i++)
       cout<<arr[i]<<" ";
    cout<<endl;
-   sort(a,a+n,compare);
+   sort(a,a+n);
    sort(arr.begin(),arr.begin()+size,compare);  
    //sorted array 
    for(int i=0;i<size;i++)
